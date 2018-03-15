@@ -4,14 +4,83 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Share+Tech+Mono">
     <link rel="shortcut icon" href="<%= webpackConfig.output.publicPath %>favicon.ico">
+    <style>
+    .countDown, .classesRemaining {
+font-family: 'Share Tech Mono', monospace;
+font-size: 1.5rem;
+}
+
+.heading {
+font-family: 'Bangers', cursive;
+font-size: 3rem;
+letter-spacing: 0.1em;
+}
+
+.subHeading {
+font-family: 'Bangers', cursive;
+font-size: 2rem;
+letter-spacing: 0.1em;
+}
+
+.subSubHeading {
+  font-family: 'Bangers', cursive;
+font-size: 1rem;
+letter-spacing: 0.05em;
+}
+
+.youTubeEmbed {
+margin-top: 2rem;
+border: 1px solid #000;
+width: 280px;
+height: 158px;
+box-shadow: 10px 5px 5px red;
+}
+
+.hideBox {
+height: 1px;
+overflow: hidden;
+margin: 0;
+}
+
+.hideBox-toggle {
+margin: 0;
+display: inline-block;
+border: 1px solid black;
+}
+
+.hideBox-toggle:hover + .hideBox, .hideBox:hover {
+height: auto;
+padding: 1rem;
+}
+
+.lebowski {
+font-size: 4rem;
+font-weight: bold;
+}
+    </style>
     <title>final-tirp-down</title>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but final-tirp-down doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <h1 class="heading">It's the Final TIRP-Down!</h1>
+<div id="app">
+</div>
+
+<h2 class="subHeading hideBox-toggle">Hover Here to Be Reminded of the Key Thing!!</h2>
+<div class="hideBox">
+  <p class="lebowski">
+  <a target="_blank" href="https://www.youtube.com/watch?v=pWdd6_ZxX8c">Yeah, well, you know, that's just, like, your opinion, man.
+    </a></p>
+</div>
+
+<h3 class="subSubHeading">I Was Going to Embed a MIDI File But Then I Thought Better Of It</h3>
+<div class="youTubeEmbed">
+<iframe width="280" height="158" src="https://www.youtube.com/embed/9jK-NcRmVcw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
     <!-- built files will be auto injected -->
   </body>
 </html>
