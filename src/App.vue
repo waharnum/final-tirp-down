@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FinalTIRPDown classesRemaining="5" countDown="5 weeks"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FinalTIRPDown from './components/FinalTIRPDown.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    FinalTIRPDown
   }
 }
 </script>
